@@ -3,7 +3,6 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { Button } from '../components/ui/Button';
 import { ShoppingBag, ArrowRight } from 'lucide-react';
-import { EmptyState } from '../components/ui/EmptyState';
 
 export const Checkout = () => {
   const { cartItems, cartTotal, clearCart } = useCart();

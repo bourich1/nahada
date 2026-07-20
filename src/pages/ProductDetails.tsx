@@ -5,7 +5,7 @@ import { ProductCard } from '../components/shop/ProductCard';
 import type { Product } from '../components/shop/ProductCard';
 import { Skeleton } from '../components/ui/Skeleton';
 import { EmptyState } from '../components/ui/EmptyState';
-import { ShoppingCart, Heart, PackageX, Minus, Plus } from 'lucide-react';
+import { ShoppingCart, PackageX, Minus, Plus } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 import productsData from '../data/products.json';
