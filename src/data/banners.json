@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&q=80",
+    "title": "تشكيلة الصيف الجديدة",
+    "subtitle": "استمتع بأفضل العروض على مسابح الأطفال",
+    "button": "تسوق الآن",
+    "link": "/category/pools"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=1200&q=80",
+    "title": "أثاث منزلي عصري",
+    "subtitle": "جدد منزلك بأحدث التصاميم العصرية",
+    "button": "اكتشف المزيد",
+    "link": "/category/furniture"
+  }
+]
