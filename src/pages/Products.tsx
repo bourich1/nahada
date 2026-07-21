@@ -6,6 +6,7 @@ import { Loader } from '../components/ui/Loader';
 import { EmptyState } from '../components/ui/EmptyState';
 import { PackageOpen, Filter } from 'lucide-react';
 import productsData from '../data/products.json';
+import categoriesData from '../data/categories.json';
 
 export const Products = () => {
   const [loading, setLoading] = useState(true);
@@ -14,6 +15,9 @@ export const Products = () => {
   const [searchParams] = useSearchParams();
 
   const searchQuery = searchParams.get('q') || '';
+  const categoryId = searchParams.get('category') || '';
+  
+  const selectedCategory = categoriesData.find(c => c.id === categoryId);
 
   useEffect(() => {
     // Simulate network request
@@ -33,16 +37,24 @@ export const Products = () => {
         ? p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
           p.description.toLowerCase().includes(searchQuery.toLowerCase())
         : true;
-      return matchesPrice && matchesSearch;
+      const matchesCategory = selectedCategory
+        ? p.category.includes(selectedCategory.nameAr) || selectedCategory.nameAr.includes(p.category)
+        : true;
+        
+      return matchesPrice && matchesSearch && matchesCategory;
     });
-  }, [products, maxPrice, searchQuery]);
+  }, [products, maxPrice, searchQuery, selectedCategory]);
 
   return (
     <main className="flex-1 bg-off-white/50 py-12">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
           <h1 className="font-cairo text-3xl md:text-4xl font-bold text-near-black">
-            {searchQuery ? `نتائج البحث عن "${searchQuery}"` : "جميع المنتجات"}
+            {searchQuery 
+              ? `نتائج البحث عن "${searchQuery}"` 
+              : selectedCategory 
+                ? selectedCategory.nameAr
+                : "جميع المنتجات"}
           </h1>
           
           {/* Filter Section */}

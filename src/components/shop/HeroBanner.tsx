@@ -22,7 +22,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ banners }) => {
     if (banners.length <= 1) return;
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % banners.length);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [banners.length]);
 
@@ -33,7 +33,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ banners }) => {
       {banners.map((banner, index) => (
         <div 
           key={banner.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-500 ${
             index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
           }`}
         >
