@@ -44,7 +44,7 @@ export const Checkout = () => {
     message += `العنوان: ${formData.address}`;
 
     // Target WhatsApp Number (Morocco format e.g. 212600000000)
-    const whatsappNumber = '212600000000'; 
+    const whatsappNumber = '212647262361'; 
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 

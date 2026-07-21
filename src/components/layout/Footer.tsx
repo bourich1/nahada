@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <div className="mb-4">
-            <img src="/nahada.svg" alt="نهضة شوب" className="h-14" />
+            <img src="/nahada.svg" alt="Nahada" className="h-14" />
           </div>
           <p className="text-mid-gray text-sm leading-relaxed">
             الوجهة الأولى للتسوق الإلكتروني بأسعار منافسة وجودة عالية. نحن نهتم بتجربة تسوقك.
@@ -40,7 +40,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="text-center text-mid-gray text-sm mt-12 pt-4 border-t border-light-gray">
-        &copy; {new Date().getFullYear()} نهضة شوب. جميع الحقوق محفوظة.
+        &copy; {new Date().getFullYear()} Nahada. جميع الحقوق محفوظة.
       </div>
     </footer>
   );

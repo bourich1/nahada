@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '../ui/Button';
 
 interface Banner {
@@ -37,26 +38,30 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ banners }) => {
           }`}
         >
           {/* Background Image */}
-          <div className="absolute inset-0 bg-near-black">
+          <div className="absolute inset-0">
             <img 
               src={banner.image} 
               alt={banner.title} 
-              className="w-full h-full object-cover opacity-60"
+              className="w-full h-full object-cover"
             />
+            {/* Dark Gradient Overlay for premium look and text readability */}
+            <div className="absolute inset-0 bg-gradient-to-l from-black/80 via-black/50 to-black/20"></div>
           </div>
           
           {/* Content */}
           <div className="relative z-20 h-full container mx-auto px-4 md:px-8 flex flex-col justify-center items-start">
             <div className="max-w-xl">
-              <h1 className="font-cairo text-4xl md:text-5xl font-bold text-white leading-tight mb-4 drop-shadow-md">
+              <h1 className="font-cairo text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4 drop-shadow-2xl">
                 {banner.title}
               </h1>
-              <p className="font-cairo text-lg md:text-xl text-off-white mb-8 drop-shadow">
+              <p className="font-cairo text-xl md:text-2xl text-gray-200 mb-8 drop-shadow-xl font-medium leading-relaxed">
                 {banner.subtitle}
               </p>
-              <Button size="lg" className="px-8 bg-brand-red hover:bg-deep-crimson text-white border-none shadow-lg">
-                {banner.button}
-              </Button>
+              <Link to={banner.link}>
+                <Button size="lg" className="px-10 py-6 text-lg font-bold bg-brand-red hover:bg-deep-crimson text-white border-none shadow-xl hover:shadow-brand-red/30 transition-all hover:-translate-y-1">
+                  {banner.button}
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
