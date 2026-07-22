@@ -34,8 +34,8 @@ export const Footer = () => {
         <div>
           <h4 className="font-bold text-near-black mb-4">تواصل معنا</h4>
           <ul className="flex flex-col gap-2 text-sm text-mid-gray">
-            <li>support@nahadashop.com</li>
-            <li className="font-abel" dir="ltr">+966 50 123 4567</li>
+            <li>khalidsadqi0@gmail.com</li>
+            <li><span className="font-abel inline-block" dir="ltr">0634323138</span></li>
           </ul>
         </div>
       </div>

@@ -70,10 +70,10 @@ const RippleButton = ({ children, className = '', ...props }: React.ButtonHTMLAt
 
 /* ─── Contact Info Cards data ─── */
 const contactCards = [
-  { icon: Phone, title: 'الهاتف', info: '0647262361', href: 'tel:+212647262361', color: 'from-brand-red to-deep-crimson' },
-  { icon: MessageCircle, title: 'واتساب', info: '0647262361', href: 'https://wa.me/212647262361', color: 'from-green-500 to-green-600' },
-  { icon: Mail, title: 'البريد الإلكتروني', info: 'support@nahadashop.com', href: 'mailto:support@nahadashop.com', color: 'from-blue-500 to-blue-600' },
-  { icon: MapPin, title: 'العنوان', info: 'المغرب', href: '#map', color: 'from-purple-500 to-purple-600' },
+  { icon: Phone, title: 'الهاتف', info: '0634323138', href: 'tel:+212634323138', color: 'from-brand-red to-deep-crimson' },
+  { icon: MessageCircle, title: 'واتساب', info: '0634323138', href: 'https://wa.me/212634323138', color: 'from-green-500 to-green-600' },
+  { icon: Mail, title: 'البريد الإلكتروني', info: 'khalidsadqi0@gmail.com', href: 'mailto:khalidsadqi0@gmail.com', color: 'from-blue-500 to-blue-600' },
+  { icon: MapPin, title: 'العنوان', info: 'المغرب', href: 'https://maps.app.goo.gl/npk5KPehSepcVyZm7', color: 'from-purple-500 to-purple-600' },
 ];
 
 /* ─── FAQ data ─── */
@@ -166,11 +166,11 @@ export const ContactUs = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <a href="tel:+212647262361" className="inline-flex items-center gap-2 bg-gradient-to-l from-brand-red to-deep-crimson text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-brand-red/25 hover:shadow-xl hover:shadow-brand-red/30 hover:-translate-y-0.5 transition-all duration-300">
+              <a href="tel:+212634323138" className="inline-flex items-center gap-2 bg-gradient-to-l from-brand-red to-deep-crimson text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-brand-red/25 hover:shadow-xl hover:shadow-brand-red/30 hover:-translate-y-0.5 transition-all duration-300">
                 <Phone className="w-5 h-5" />
                 اتصل الآن
               </a>
-              <a href="https://wa.me/212647262361" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white border-2 border-green-500 text-green-600 px-6 py-3 rounded-xl font-bold hover:bg-green-500 hover:text-white hover:-translate-y-0.5 transition-all duration-300">
+              <a href="https://wa.me/212634323138" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white border-2 border-green-500 text-green-600 px-6 py-3 rounded-xl font-bold hover:bg-green-500 hover:text-white hover:-translate-y-0.5 transition-all duration-300">
                 <MessageCircle className="w-5 h-5" />
                 واتساب
               </a>
@@ -351,7 +351,7 @@ export const ContactUs = () => {
           transition={{ duration: 0.4 }}
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435520.7077662902!2d-7.8!3d33.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d212.39594508147914!2d-8.042915838909991!3d31.597275834157212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM1JzQ5LjMiTiA4wrAwMiczMy43Ilc!5e0!3m2!1sen!2sma!4v1784735342047!5m2!1sen!2sma"
             width="100%"
             height="400"
             style={{ border: 0 }}

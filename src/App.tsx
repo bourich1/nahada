@@ -13,6 +13,7 @@ import { ContactUs } from './pages/ContactUs';
 import { Checkout } from './pages/Checkout';
 import { Cart } from './pages/Cart';
 import { Products } from './pages/Products';
+import { FloatingContactButtons } from './components/layout/FloatingContactButtons';
 
 function App() {
   const [initialLoading, setInitialLoading] = useState(true);
@@ -53,6 +54,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
         <Footer />
+        <FloatingContactButtons />
       </div>
     </Router>
   );
