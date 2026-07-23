@@ -11,7 +11,8 @@ interface SEOHeadProps {
 }
 
 const SITE_NAME = 'Nahada';
-const DEFAULT_OG_IMAGE = '/nahada.svg';
+const SITE_URL = 'https://nahada.ma';
+const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 export const SEOHead = ({
   title,
@@ -41,6 +42,9 @@ export const SEOHead = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:type" content="image/png" />
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:locale" content="ar_MA" />
       {canonical && <meta property="og:url" content={canonical} />}
