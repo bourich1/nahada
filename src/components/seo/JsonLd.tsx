@@ -1,3 +1,5 @@
+/* eslint-disable react-refresh/only-export-components */
+
 interface JsonLdProps {
   data: Record<string, unknown>;
 }

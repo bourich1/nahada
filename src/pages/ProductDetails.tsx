@@ -23,6 +23,7 @@ export const ProductDetails = () => {
 
   useEffect(() => {
     // Reset state when route changes
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- Required to reset state on route change
     setLoading(true);
     setQuantity(1);
     window.scrollTo(0, 0);
@@ -43,7 +44,9 @@ export const ProductDetails = () => {
       setLoading(false);
     }, 600);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+    };
   }, [slug]);
 
   if (loading) {
